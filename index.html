@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Snacks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- !------------------Navbar Start--------------------->
+    <nav class="navbar navbar-expand-lg position-sticky top-0 bg-light z-1 shadow">
+        <div class="container-fluid p-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand m-auto fw-bold fs-1" href="#">Quick <span class="text-warning">Snacks</span></a>
+            <div class="collapse navbar-collapse justify-content-between px-5" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Add Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">About us</a>
+                    </li>
+                </ul>
+                <div class="in-btn d-flex gap-3 justify-content-center">
+                    <a class="nav-link" aria-disabled="true">
+                        <button class="btn btn-light btn-outline-warning fw-bold px-4 py-2">Login</button>
+                    </a>
+                    <a class="nav-link" aria-disabled="true">
+                        <button class="btn btn-warning btn-outline-light fw-bold px-4 py-2">Signup</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- !------------------Navbar End--------------------->
+    <!-- !------------------Section1 Start--------------------->
+    <div class="container w-100 d-flex flex-wrap align-items-center justify-content-center my-3">
+        <div class="sec w-50 d-flex flex-column">
+            <h1 class="fw-bold">Your Daily Dish A <span class="text-warning">Food</span> Journey</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro facilis pariatur ea! Ea soluta, accusamus
+                similique nostrum placeat veniam. Architecto rem nulla, commodi sint in recusandae velit eveniet fuga
+                corrupti.</p>
+            <div class="in-btn">
+                <button class="btn btn-warning btn-outline-light fw-bold px-5 py-2">Sign up</button>
+                <small class="d-block">Do you have account? <a href="#"
+                        class="text-warning text-decoration-none">Login</a></small>
+            </div>
+        </div>
+
+        <div class="sec w-50 d-flex justify-content-center align-items-center p-3 overflow-hidden">
+            <img class="w-100 pizza"
+                src="images/pizza.png"
+                alt="">
+            <img src="images/blob.png" class="blob position-absolute z-n1 w-100 end-0" alt="">
+        </div>
+    </div>
+    <!-- !------------------Section1 End--------------------->
+    <!-- !------------------Section2 Start--------------------->
+    <div class="container w-100 d-flex flex-wrap align-items-center justify-content-center my-5 py-5">
+        <div class="sec w-50 d-flex justify-content-center align-items-center overflow-hidden">
+            <img class="w-75" src="images/camera capture.avif" alt="">
+        </div>
+        <div class="sec w-50 d-flex flex-column align-items-center">
+            <h1 class="fw-bold">Share your <span class="text-warning">Recipes</span></h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores iusto!
+                Iure, ex error, quod provident quasi magni laboriosam harum velit</p>
+            <div class="in-btn">
+                <button class="btn btn-warning btn-outline-light fw-bold px-3 py-2">Create New Recipe</button>
+            </div>
+        </div>
+    </div>
+    <!-- !------------------Section2 End--------------------->
+    <!-- !------------------Section3 Start--------------------->
+    <div class="container my-5 py-5">
+        <h2>Trending Recipe</h2>
+        <div class="card-container w-100 d-flex flex-wrap align-items-center justify-content-around gap-5">
+            <!-- ?------------------Card 1--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 2--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 3--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 4--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 5--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 6--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- !------------------Section3 End--------------------->
+    <!-- !------------------Section4 Start--------------------->
+    <div class="container my-5 py-5">
+        <h2>Blog</h2>
+        <div class="w-100 d-flex flex-wrap align-items-center justify-content-center">
+            <div class="sec w-50 d-flex justify-content-center p-3 align-items-center flex-column">
+                <img class="w-100 rounded-3"
+                    src="https://img.freepik.com/free-photo/top-view-arrangement-with-food-wooden-background_23-2148308806.jpg"
+                    alt="">
+                <h5 class="fw-bold text-center">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+                <small class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut
+                    cupiditate obcaecati
+                    ipsam! Atque distinctio odio vitae quasi autem eius necessitatib</small>
+            </div>
+
+            <div class="sec w-50 d-flex justify-content-center p-3 align-items-center flex-column">
+                <img class="w-100 rounded-3"
+                    src="https://t4.ftcdn.net/jpg/06/25/16/63/360_F_625166313_eh9LfdUO4WHUdcS7OOXco1zjR5JZNWz2.jpg"
+                    alt="">
+                <h5 class="fw-bold text-center">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+                <small class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut
+                    cupiditate obcaecati
+                    ipsam! Atque distinctio odio vitae quasi autem eius necessitatib</small>
+            </div>
+        </div>
+    </div>
+    <!-- !------------------Section4 End--------------------->
+    <!-- !------------------Section5 Start--------------------->
+    <div class="container my-5 py-5">
+        <h2>Explore Recipe</h2>
+        <div class="card-container w-100 d-flex flex-wrap align-items-center justify-content-around gap-5">
+            <!-- ?------------------Card 1--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 2--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 3--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 4--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 5--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+            <!-- ?------------------Card 6--------------------->
+            <div class="card">
+                <div class="card-img h-50 overflow-hidden d-flex">
+                    <img class="w-100 object-fit-cover"
+                        src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg"
+                        alt="">
+                </div>
+                <div class="card-rating px-2">
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-warning'></i>
+                    <i class='bx bxs-star text-secondary'></i>
+                </div>
+                <div class="card-title p-2">
+                    <h5>Zinger Burger</h5>
+                </div>
+                <div class="card-description px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae.</p>
+                </div>
+                <div class="card-master w-100 d-flex justify-content-between align-items-center p-2">
+                    <div class="pfp-name d-flex align-items-center fw-semibold fw-semibold">
+                        <i class='bx bxs-user-circle fs-3 text-warning text-warning'></i>
+                        Alex Martin
+                    </div>
+                    <div class="calories text-danger fw-semibold">
+                        <i class='bx bxs-hot'></i>
+                        322 cals
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- !------------------Section5 End--------------------->
+    <!-- !------------------Section6 Start--------------------->
+    <div class="container d-flex flex-column align-items-center my-5 py-5">
+        <h2 class="fw-bold">Let's Stay In Touch!</h2>
+        <h5 class="text-secondary text-center">Join out newsletter, so that we reach out to you with our news and offers.</h5>
+        <form action="" class="container d-flex w-100 justify-content-center gap-4">
+            <input class="w-50 btn-outline-secondary px-3 border-warning border-1 rounded-3" type="text"
+                placeholder="Enter your Email">
+            <button class="btn btn-warning btn-outline-light fw-bold px-3 py-2">Subscribe</button>
+        </form>
+
+    </div>
+    <!-- !------------------Section6 End--------------------->
+    <!-- !------------------Section7 Start--------------------->
+    <div class="container my-5 py-5">
+        <h2>Popular Categories</h2>
+        <div class="categories w-100 d-flex flex-wrap justify-content-center gap-4">
+            <div class="category-body d-flex flex-column align-items-center">
+                <div class="category-img"><img
+                        src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsb2ZmaWNlM19wcm9mZXNzaW9uYWxfZm9vZF9waG90b2dyYXBoeV9vZl9hX3NocmltcF9wb2tlX18zYWQ0MWVmOS1lYTkwLTQ4M2QtOThlMy1iMTYxMWU1ZWQwYTMucG5n.png"
+                        class="w-100" alt=""></div>
+                <div class="category-txt">
+                    <p>Breakfast recipes</p>
+                </div>
+            </div>
+            <div class="category-body d-flex flex-column align-items-center">
+                <div class="category-img"><img
+                        src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L2xhdXJhc3RlZmFubzI2Nl9yZWFsX3Bob3RvX29mX2NoaWNrZW5fdGlra2FfbWFzYWxhX3RvcF92aWV3X2lzb19jYTczNmU2NS0wY2Q0LTQ5MjEtODdhNC0zY2M4OWU1ZjdjOGYucG5n.png"
+                        class="w-100" alt=""></div>
+                <div class="category-txt">
+                    <p>Lunch recipes</p>
+                </div>
+            </div>
+            <div class="category-body d-flex flex-column align-items-center">
+                <div class="category-img"><img
+                        src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L2Rlc2lnbndpdGhtZTA5X2ZsYXRfbGF5X29uZV9zaW5nbGVfcGhvdG9ncmFwaHlfb2ZfYV9yZWFsaXN0aWNfdF9iZjM1MGNlMS1hNjdlLTRjMDUtOGZlZS1kYWM0M2E4ZDAwODYucG5n.png"
+                        class="w-100" alt=""></div>
+                <div class="category-txt">
+                    <p>Dinner recipes</p>
+                </div>
+            </div>
+            <div class="category-body d-flex flex-column align-items-center">
+                <div class="category-img"><img
+                        src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTEwL3Jhd3BpeGVsX29mZmljZV8yOV92aWJyYW50X3dhdGVyY29sb3JfaWxsdXN0cmF0aW9uX29mX2FuX2lzb2xhdF81OGM1YjczNy0yZGNhLTQwNmMtYTVjZC00ZmIwZTdkODRmNzgucG5n.png"
+                        class="w-100" alt=""></div>
+                <div class="category-txt">
+                    <p>Appetizer recipes</p>
+                </div>
+            </div>
+            <div class="category-body d-flex flex-column align-items-center">
+                <div class="category-img"><img
+                        src="https://images.rawpixel.com/image_png_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczg3LW1uLTI1LTAxLnBuZw.png"
+                        class="w-100" alt=""></div>
+                <div class="category-txt">
+                    <p>Salad recipes</p>
+                </div>
+            </div>
+            <div class="category-body d-flex flex-column align-items-center">
+                <div class="category-img"><img
+                        src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTExL3Jhd3BpeGVsX29mZmljZV8yOV92aWJyYW50X3dhdGVyY29sb3JfaWxsdXN0cmF0aW9uX29mX2FuX2lzb2xhdF80Nzg1OTQ3Zi1kMTY1LTQ2MjktYjIxOS0wZmFjNjYxMzlhZGQucG5n.png"
+                        class="w-100" alt=""></div>
+                <div class="category-txt">
+                    <p>Pizza recipes</p>
+                </div>
+            </div>
+            <div class="category-body d-flex flex-column align-items-center">
+                <div class="category-img"><img
+                        src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTExL3Jhd3BpeGVsb2ZmaWNlMl9wcm9mZXNzaW9uYWxfZm9vZF9waG90b2dyYXBoeV9vZl9hbl9pc29sYXRlZF90aF85NWY4Zjc2My01YTg1LTQwOTgtODM4Ni0yZDBmMjY2YTIyNTcucG5n.png"
+                        class="w-100" alt=""></div>
+                <div class="category-txt">
+                    <p>Smoothie recipes</p>
+                </div>
+            </div>
+            <div class="category-body d-flex flex-column align-items-center">
+                <div class="category-img"><img
+                        src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTEwL3Jhd3BpeGVsb2ZmaWNlNl9waG90b19vZl9hX3lpX21laW5fb25fZGlzaF9pc29sYXRlZF9vbl9hX3doaXRlX185ZjczNjYxOS03NDNiLTQ5NzktODNmMi1jMTdhNzYyNzYwNTkucG5n.png"
+                        class="w-100" alt=""></div>
+                <div class="category-txt">
+                    <p>Pasta recipes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- !------------------Section7 End--------------------->
+    <!-- !------------------Footer Start--------------------->
+    <footer
+        class="w-100 bg-warning bg-opacity-25 border-warning border-top border-2 d-flex flex-wrap justify-content-around gap-5 p-5">
+        <div class="footer-sec d-flex flex-column">
+            <h3 class="fw-bold">Quick <span class="text-warning">Snacks</span></h3>
+            <p class="footer-p-tag"><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro facilis
+                    pariatur ea! Ea soluta, accusamus
+                    similique nostrum placeat veniam. Architecto rem nulla</small></p>
+        </div>
+        <div class="footer-sec mx-3">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Recipes</li>
+                <li>Categories</li>
+                <li>Blog</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div class="footer-sec mx-3">
+            <h6 class="fw-bold">Legal</h6>
+            <ul class="list-unstyled">
+                <li>Terms & Conditions</li>
+                <li>Privacy & Cookies</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+        <div class="footer-sec d-flex flex-column align-items-center mx-3 gap-1">
+            <h5 class="fw-bold">Newsletter</h5>
+            <p class="text-center">Subscribe to our newsletter to get more free tips</p>
+            <input type="text" placeholder="Enter your Email" class="px-3 py-1 w-100 border-warning border-1 rounded-1">
+            <button class="btn btn-warning w-100">Subscribe</button>
+        </div>
+    </footer>
+    <div class="footer-copyright w-100 bg-warning d-flex justify-content-between align-items-center px-5 py-2">
+        <div class="copyright fw-semibold">© 2024 Souls | All Right Reserved</div>
+        <div class="copyright-links fs-3 text-dark d-flex gap-2">
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt'></i>
+        </div>
+    </div>
+    <!-- !------------------Footer End--------------------->
+    <!-- !------------------Top Btn Start--------------------->
+    <div class="btn btn-warning position-fixed end-0 bottom-0 my-3 me-3 shadow">
+        <a href="#" class="text-light">
+            <i class='bx bxs-chevrons-up'></i>
+        </a>
+    </div>
+    <!-- !------------------Top Btn End--------------------->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

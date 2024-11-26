@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.sec,
+.blog-container {
+  min-width: 320px !important;
+}
+
+.card {
+  width: 320px;
+  aspect-ratio: 1;
+}
+
+.category-img {
+  width: 200px;
+  aspect-ratio: 1;
+}
+
+.footer-p-tag {
+  text-align: justify;
+  min-width: 50px;
+  max-width: 300px;
+}
+
+.blob{
+    max-width: 450px !important;
+}
+
+.pizza{
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
